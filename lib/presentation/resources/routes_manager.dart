@@ -35,11 +35,14 @@ class RouteGenerator {
 
   static Route<dynamic> unDefinedRoute() {
     return MaterialPageRoute(
-        builder: (_) => Scaffold(
-              appBar: AppBar(
-                title: Text("No Route Found"),
-              ),
-              body: Center(child: Text("No Route Found")),
-            ));
+      builder: (_) => Scaffold(
+        appBar: AppBar(
+          title: Text(AppStrings.noRouteFound),
+        ),
+        body: Center(
+          child: Text(AppStrings.noRouteFound),
+        ),
+      ),
+    );
   }
 }
